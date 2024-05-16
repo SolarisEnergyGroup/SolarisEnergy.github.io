@@ -1,0 +1,439 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #2E5D5F;
+}
+a {
+    font-family: 'Product Sans', sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+}
+.primero {
+    position: sticky;
+    z-index: 999;
+    display: flex;
+    height: 40px;
+    background-color: rgb(53, 50, 50);
+    justify-content:space-between ;
+    align-items: center;
+    padding: 10px;
+    
+    
+}
+.empresa {
+    font-size: medium;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 70px ;
+    margin-right: 10px;
+}
+nav a {
+    position: sticky;
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover {
+    color: black;
+}
+.Productosmenu {
+    font-family: 'Product Sans', sans-serif;
+    list-style: none;
+    font-size: 50px;
+    position: relative;
+    text-align: center;
+    top: -1cm;
+    color: #0ce6b6;
+
+} 
+.productosMenu {
+    margin-top: 4.5cm;
+}
+.productosMenu li {
+    list-style: none;
+}
+.styky1 {
+    display: flex;
+    position:sticky;
+    top:0px;
+     width: 35.7cm;
+    display:inline-block;
+    z-index: 999;
+}
+/*Header 2*/
+.abajo {
+   
+    display: flex;
+    height: 40px;
+    background-color: rgb(77, 70, 70);
+    justify-content:center ;
+    align-items: center;
+    padding: 5px;
+}
+.abajo a {
+    font-family: 'Product Sans', sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+.navdos a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+.navdos a:hover {
+    color: black;
+}
+/*Slider*/
+.SlideG h1 {
+    color: #2f7b7e;
+    text-align: center;
+    font-family: sans-serif;
+}
+.slider-frame {
+	width: 1400px, 300px;
+    height: auto;
+	margin: 1% auto 0;
+	overflow: hidden;
+    margin-top: -0.5cm;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 500%;
+	
+	animation: slide 13s infinite alternate-reverse ;
+}
+
+.slider-frame li {
+	width: 50%;
+	list-style: none;
+}
+
+.slider-frame img {
+    display: flexbox;
+    text-align: center;
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+.slider-frame:hover img {
+    
+    transition: 1s;
+    opacity: 0.2;
+    
+}
+
+/*sesion*/
+.registro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.registro h1 {
+
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+.registro form {
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+form .User {
+    position: relative;
+    border-bottom: 2px solid #7a5959;
+    margin: 10px 0;
+}
+.User input {
+    width: calc(100% - 20%) ;
+    padding: 5px 20px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.User label {
+    position: absolute;
+    top: 70%;
+    left: 10px;
+    color: silver;
+    transform: translateY(-15%);
+    font-size: 17px;
+    pointer-events: none;
+    transition: .5s
+}
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    margin-top: 60px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 18px;
+    background: #4CAF50;
+    cursor: pointer;
+    outline: none;
+
+}
+.User span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #4CAF50;
+}
+.User input:focus ~ label,
+.User input:focus ~ label {
+    top: -5px;
+    color: #4CAF50;
+}
+.User input:focus ~ span::before,
+.User input:focus ~ span::before {
+     width: 100px;
+}
+
+input[type="submit"]:hover {
+    border-color: green;
+    transition: .5s;
+}
+/*Quienes somos*/
+.Objetivos {
+    margin-top: -6.5cm;
+    margin-left: 25cm;
+    width: 300px;
+}
+.Quison {
+    text-align: justify;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 50px;
+    font-family: 'Product Sans', sans-serif;
+    font-weight: bold;
+    animation-name: moveToRight;
+    animation: fade-in 3s ease-out;
+}
+@keyframes fade-in {
+    0% { opacity: 0; } /* El texto empieza completamente transparente */
+    100% { opacity: 1; } /* El texto se vuelve completamente visible al final de la animación */
+}
+.seccion {
+    margin-bottom: 20px;
+    text-align: left ;
+}
+.linea-divisora {
+    border: none; /* Elimina el borde predeterminado */
+    border-top: 1px solid #ccc; /* Establece una línea sólida con color gris */
+    margin: 20px 0; /* Margen superior e inferior para separar visualmente */
+    text-align: left;
+    
+}
+.Quison li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*Mantenimiento preventivo*/
+.Imagenp img {
+    margin: 20px;
+    width: 35%;
+}
+.div_Descripcion h1 {
+    margin-top: -13cm;
+    padding-left: 25cm;
+}
+.div_Descripcion p {
+    text-align: justify;
+    margin-top: 1cm;
+    padding-right: 1cm;
+   text-align: right;
+   font-size: 17px;
+
+}
+.boton1 {
+    height: 65px;
+    margin-top: 4cm;
+    margin-left: 950px;
+    background-color: #4CAF50;
+    border: #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer; 
+  transition: background-color 0.3s;
+}
+.boton1:hover {
+    background-color: #408543; 
+}
+/*Articulos em promocion */
+
+.General {
+    font-family: 'Product Sans', sans-serif;
+    height: 450px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: rgb(255, 250, 240);
+}
+.Imagenp {
+    border-radius: 60;
+    align-items: center;
+    width: 30cm;
+}
+.General h1 {
+    margin-top: -31%;
+}
+.boton1 {
+    top: 270px;
+    position: absolute;
+    text-align: center;
+}
+/*Recomendados*/
+.container {
+    left: 175px;
+    width: 200px;
+    height: 200px;
+    background-color:#fafafa;
+    border-radius: 7px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    position: relative; /* Para que los botones estén posicionados correctamente */
+}
+.container img {
+    border-radius: 7px;
+    margin-top: 0.2cm;
+    max-width: 80%;
+    max-height: 100%;
+}
+.button {
+    font-weight: bold;
+    font-family: 'Product Sans', sans-serif;
+    width: 150px;
+    border-radius: 3px;
+    background-color:#4ca150 ;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*Producos relacionados*/
+.relacionado1 {
+    justify-content: center;
+    width: 18%;
+    margin-right: 11px;
+    border-radius: 8px;
+
+}
+/*Productos*/
+.kit1 {
+    list-style-type: none;
+    text-align: center;
+}
+.kit2 {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 0.3cm;
+}
+.kit3 {
+    list-style-type: none;
+     text-align: center;
+     margin-top: 0.3cm;
+}
+.kit4 {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 0.3cm;
+}
+.Carrito {
+    font-weight: bold;
+    color: rgb(151, 0, 0);
+}
+.CarritoMantenimiento {
+    font-weight: bold;
+}
+/*SERVICIOS*/
+.Servicios12 {
+    font-size: 45PX;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font-family: 'Product Sans', sans-serif;
+    border-radius: 10PX;
+    
+}
+.Servicios12 li {
+    list-style: none;
+}
+.Servicios12 h1 {
+    margin-left: 1CM;
+}
+/*Contrataciones*/
+.contrataciones1 h1 {
+    color: #2f7b7e;
+}
+.contrataciones1 {
+    margin-top: 2.5cm;
+    font-family: 'Product Sans', sans-serif;
+    text-align: center;
+    background-color: #fafafa;
+    font-size: 30px;
+    border-radius: 15px;
+}
+.contrataciones1 a {
+    color: rgb(36, 138, 116);
+    font-size: 30px;
+}
+.Servicios12 h1 {
+    color: #2f7b7e;
+}
+/*footer*/
+footer {
+    font-family: 'Product Sans', sans-serif;
+}
+.reservados {
+    color: #ccc;
+    border-radius: 1px;
+    font-weight:bold;
+    font-family: 'Product Sans', sans-serif;
+    background-color:  rgb(53, 50, 50);
+    text-align: justify;
+}
+.reservados2 {
+    color: #ccc;
+    position: relative;
+    bottom: -26px;
+    height: 10px;
+    font-family: 'Product Sans', sans-serif;
+    text-align: center;
+    
+}
+.reservados p {
+    margin-bottom: 20px;
+}
+.reservados li {
+    list-style: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Registrate</title>
+    
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+  
+    </head>
+    <body>
+        <header class="primero">
+            <a href="#" class="logo">
+            <img src="RESOURSE/IMAGES/Solaris Energy Group.png"></img>
+           <h2 class="empresa">Solaris Energy Group</h2>
+           <a href="#" class="logo"></a>
+        </a>
+    <nav>
+        <a href="index.html" class="nav-link">Regresar al menu</a>
+    </nav>
+</header>
+        <div class="registro">
+            <h1>Registro</h1>
+            <form method="post">
+                <div class="User">
+                <input type="text"required>
+                <label>Nombre de usuario</label>
+            </div>
+            <div class="User">
+                <input type="password" required>
+                <label>Contraseña</label>
+            </div>
+            <div class="User">
+                <input type="text" required>
+                <label>Numero telefonico</label>
+            </div>
+            <div class="User">
+                <input type="text" required>
+                <label>Correo Electronico</label>
+            </div>
+            <div
+            <br> <input type="submit" id="Registrar" value="Registrar" formaction="Productos.html">
+            </form>
+            <script>
+                document.getElementById("Registrar").addEventListener("click", function(event) {
+                    event.preventDefault(); 
+                  
+                    alert("¡Felicidades! Has obtenido un 10% de descuento en cualquier compra.");
+        
+                    
+                    window.location.href = "Productos.html";
+                });
+            </script>
+        </div>
+    
+    </body>
+</html>
